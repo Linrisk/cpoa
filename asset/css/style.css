@@ -1,0 +1,35 @@
+/* formulaireconnect.php */
+form {
+	display: flex;
+	align-items: center;
+	background-color: blue;
+	flex-direction: column;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	justify-content: center;
+ 	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}
+
+/*inscription .php */
+
+
+
+.forminscri {
+display: flex;
+	align-items: center;
+	background-color: blue;
+	flex-direction: column;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	justify-content: center;
+ 	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}
+
