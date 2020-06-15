@@ -1,0 +1,12 @@
+
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 5%;
+}
+
+.enum {
+	display: flex;
+	flex-direction: row;
+}
