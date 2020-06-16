@@ -14,8 +14,18 @@ catch(Exception $e)
 
 
 
-$reponse = $bdd->query('SELECT * from hebergement where  nom="'.$SESSION_["nomhotel"].'"'); // à check avec from hebergement, where hebergement.id=profil.idh
-echo $SESSION_["nomhotel"];
 
-?>
+$reponse = $bdd->query('SELECT * from hebergement where  id="'.$_SESSION["idh"].'"'); // à check avec from hebergement, where hebergement.id=profil.idh
+ 
+while ($donnees = $reponse->fetch())
+{
+	echo $donnees["Nom"]; ?> </br> <?php
+	echo $donnees["type"]; ?> </br> <?php
+	echo $donnees["services"]; ?> </br> <?php
+	echo $donnees["Adresse"]; ?> </br> <?php
+
+}
+$reponse->closeCursor(); // Termine le traitement de la requête
+
+?>	
 

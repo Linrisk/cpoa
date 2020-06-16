@@ -20,7 +20,7 @@ echo 'id est : '.$_SESSION["idh"];
 while (isset($_POST['capa'.$j]))
 
 {	
-$reponse = $bdd->query('INSERT INTO chambre VALUES("","'.$_POST['capa'.$j].'","'.$_SESSION["idh"].'")');
+$reponse = $bdd->query('INSERT INTO chambre VALUES("","'.$_POST['capa'.$j].'","'.$_SESSION["idh"].'","'.$_POST['chambre'.$j].'")');
 $j=$j+1;
 
 }

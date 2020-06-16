@@ -39,7 +39,11 @@
 			        <input type="text" id="description" name="description">
 			</div >
 
-
+		    <div class='nbchambres'>
+					
+					<label for="name"> Nombre Chambres totales</label>
+			        <input type="number" id="nbchambres" name="nbchambres">
+			</div >
 
 			         <div class="button">
 			        <button type="submit">Envoyer le message</button>

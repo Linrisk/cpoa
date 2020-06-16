@@ -27,9 +27,12 @@ $reponse = $bdd->query('SELECT * from profil where  login="'.$login.'"'); // à 
 
 while ($donnees = $reponse->fetch())
 {
+
 	if($mot_de_passe==$donnees['mdp']){
 
 		if($donnees['type']=="gerant"){
+
+			$_SESSION["idh"]=$donnees['idh'];
 
 			if ($donnees['idh']==0){
 				 header('Location: ../views/inscription.php');      
@@ -47,8 +50,11 @@ while ($donnees = $reponse->fetch())
 	else {
 		echo 'mauvais mdp';
 	}			
-								
+		 
+
+						
 }
+
 
 
 $reponse->closeCursor(); // Termine le traitement de la requête

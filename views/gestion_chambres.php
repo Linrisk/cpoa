@@ -18,6 +18,7 @@
 	<?php 
 	$i=1 ;
 	$j=1;
+
 	while($i<=$_SESSION["nbchambres"]){
 		?>
 	<div class="enum">
@@ -25,6 +26,10 @@
 	<input type="number" id="<?php echo $j; ?>" name="capa<?php echo $j; ?>">
 	
 	<?php echo ' Places' ; ?>
+		<label> Numero de chambre : </label>
+
+		<input type="number" id="<?php echo $j; ?>" name="chambre<?php echo $j; ?>">
+
 	</div>
 	<?php
 	$i=$i+1;
