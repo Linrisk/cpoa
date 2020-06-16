@@ -102,6 +102,11 @@ form{
 
 }
 
+::-webkit-scrollbar {
+       width: 0px;
+       background: transparent; /* make scrollbar transparent */
+}
+
 .choix {
 	height: 30px;
 }
@@ -137,7 +142,7 @@ text {
 input {
   position: absolute;
   left: -9999px;
-  
+
 }
 
 label {
@@ -162,4 +167,8 @@ input:checked + label {
 
 .dispos {
 	margin-top: 1px;
+}
+
+.bouton_valid {
+	height: 5%;
 }

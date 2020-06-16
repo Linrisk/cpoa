@@ -20,7 +20,6 @@ $description=$_POST['description'];
 $adresse=$_POST['adresse'];
 $nbchambres=$_POST['nbchambres'];
 
-$_SESSION["nbchambres"]=$_POST['nbchambres'];
 $_SESSION["nomhotel"]=$_POST['nomhotel'];
 
 $reponse = $bdd->query('INSERT INTO hebergement VALUES("","'.$nom.'","'.$type.'","'.$description.'","'.$adresse.'")');
@@ -29,6 +28,7 @@ $reponse = $bdd->query('INSERT INTO hebergement VALUES("","'.$nom.'","'.$type.'"
    //$_SESSION["idhotel"]=$last_id;
 
  // echo $_SESSION["login"];
+$_SESSION["nbchambres"]=$_POST['nbchambres'];
 
 
 
