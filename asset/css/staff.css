@@ -216,3 +216,12 @@ form {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+
+.vip-3 {
+	background-color: orange;
+
+}
+.vip-3>* {
+        flex: 1 1 300px;
+    }

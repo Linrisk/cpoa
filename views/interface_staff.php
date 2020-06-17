@@ -41,9 +41,14 @@
 
 							</div>
 						</div>
-						<div class="vip-2">
-			 				<?php include '../controllers/vip.php' ?> 
-						</div>
+						
+							<div class="vip-2">
+				 				<?php include '../controllers/vip.php' ?> 
+							</div>
+							<div class="vip-3">
+				 				<?php include '../controllers/vipnonjury.php' ?> 
+							</div>
+						
 					</form>
 				</div>
 			</div>
