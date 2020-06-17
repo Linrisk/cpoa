@@ -1,0 +1,218 @@
+.header {
+	background-color:red;
+	display: flex;
+	flex-direction: row;
+	height: 40px;
+	
+}
+
+/*----------------*/
+.accueil_retour {
+	width: 70%;
+	height: 60%;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	    font-size: 17px;
+}
+
+.deconnecter{
+	width: 120px;
+	margin-top: 11%;
+	margin-left: 3%;	
+	    font-size: 17px;
+
+
+}
+
+
+img {
+	margin-left: 80%;
+height: 90%;}
+
+.bienvenue {
+	 /*border : thick double #c19e5e; */
+	 align-items: center;
+	 width: 15%;
+	 display: flex;
+	 justify-content: center;
+	 height: 30px;
+	 margin-top: 0.5%;
+	
+background-color:yellow;
+
+	
+}
+
+.interface {
+	background-color: green;
+	height: 790px;
+	width: 90%;
+	margin-top: 1.5%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.choix {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 1%;
+	align-items: 
+	
+}
+
+.heber {
+	background-color: yellow;
+	height: 120%;
+	margin-left: 30%;
+
+
+}
+
+.vip {
+	background-color: pink;
+		height: 120%;
+margin-right: 30%;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: row;
+	background-color: purple;
+	margin-left:10px;
+	margin-right: 10px;
+	justify-content: center;
+
+}
+
+.hebergement {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.reservation {
+	background-color: brown;
+	height: 700px;
+	width: 20%;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+
+.contain-day {
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.place {
+margin-left: auto;
+	margin-right: auto;
+	background-color: yellow;
+	height: 445px;
+	width: 300%;
+	margin-top: 10%;
+
+}
+
+.day {
+	margin-left: auto;
+	margin-right: auto;
+}
+.container-2 {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.hotel {
+	display: flex;
+	width: 30%;
+	background-color: #87B5F3;
+	height: 690px;
+	flex-direction: column;
+}
+
+
+
+
+.informations {
+	background-color: brown;
+	width: 300px;
+	height: 100px;
+	margin-left: 30px;
+}
+
+.vip-2 {
+	background-color: pink;
+	width: 600px;
+
+	height: 100%;
+}
+
+.vip-2>* {
+        flex: 1 1 300px;
+    }
+
+
+.labut {
+	display: flex;
+	flex-direction: row;
+
+}
+form {
+	display: flex;
+	flex-direction:column;
+}
+
+
+
+/* Menu */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

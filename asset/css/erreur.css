@@ -1,0 +1,33 @@
+body {
+	background-color:rgb(20, 20, 20);
+	
+}
+
+h1 {
+	color: #c19e5e;
+	font-family: "FoundryMonolineOT3W08-XBd";
+	font-size: 50px;
+}
+
+
+h2{
+	color: #c19e5e;
+	font-family: "FoundryMonolineOT3W08-XBd";
+
+
+}
+
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 12%;
+}
+
+.affichage {
+	position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%);
+}

@@ -45,10 +45,12 @@ while ($donnees = $reponse->fetch())
 
 		}
 
-		else { echo 'ceci est qqn du staff';  }
+		else {
+			
+		 header('Location: ../views/interface_staff.php');    }
 	}
 	else {
-		echo 'mauvais mdp';
+		header('Location: ../views/erreurmdp.php');  
 	}			
 		 
 

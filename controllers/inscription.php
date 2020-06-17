@@ -18,7 +18,7 @@ $nom=$_POST['nomhotel'];
 $type=$_POST['type'];
 $description=$_POST['description'];
 $adresse=$_POST['adresse'];
-$nbchambres=$_POST['nbchambres'];
+$nbchambres=$_POST['nbchambres'];  
 
 $_SESSION["nomhotel"]=$_POST['nomhotel'];
 

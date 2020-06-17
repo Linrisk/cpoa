@@ -27,7 +27,7 @@ foreach ($_POST['check'] as $value) {
 - Inserer les valeurs dans les basses de données qui correspond 
 */
 
-
+ header('Location: ../views/accueil.php');      
 
 
 

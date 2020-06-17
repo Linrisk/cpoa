@@ -2,21 +2,127 @@
 form {
 	display: flex;
 	align-items: center;
-	background-color: blue;
 	flex-direction: column;
 	width: 30%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: auto;
-	margin-top: auto;
+	
 	justify-content: center;
- 	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-  transform: translateY(-50%);
+ 	margin-top: 5vh; 
+
+  border : thick double #c19e5e;
+  height: 90px;
+  border-radius: 2px;
 }
+
 
 /*inscription .php */
 
+.emaill {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+}
 
+input[type=mail] {
+
+  border-radius: 10px;
+
+
+  display: flex;
+  margin-top: 10px;
+	flex-direction: column;
+	  background: rgba(255, 255, 255, 0.1);
+}
+
+input[type=password] {
+  
+  border-radius: 10px;
+
+
+ 
+  display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;	
+	  background: rgba(255, 255, 255, 0.1);
+	  box-shadow: inset rgba(0,0,0,0.35) 2px 2px 12px;
+	  webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+
+}
+
+
+input[type=mail]:focus {
+    color: white;
+
+    
+    /* Désactiver la bordure par défaut (bleu clair sur chrome) */
+    outline: 0;
+}
+
+
+
+input[type=password]:focus {
+    color: white;
+
+    
+    /* Désactiver la bordure par défaut (bleu clair sur chrome) */
+    outline: 0;
+}
+
+
+button {
+	border-radius: 50px;
+
+
+	margin-bottom: 10px;
+
+	width: 200%;
+
+		/* deuxieme partie du bouton */
+
+		text-align: center;
+		
+	 background: rgba(255, 255, 255, 0.1);
+	  box-shadow: inset rgba(0,0,0,0.35) 2px 2px 12px;
+	  webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+
+  color: #c19e5e;
+
+  transition: all 0.2s ease-out 0s;
+
+  /*troisieme partie */
+font-family: "FoundryMonolineOT3W08-Lt";
+
+
+
+
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.mdp {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .forminscri {
 display: flex;
@@ -24,15 +130,109 @@ display: flex;
 	background-color: blue;
 	flex-direction: column;
 	width: 30%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: auto;
-	margin-top: auto;
+	
 	justify-content: center;
- 	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-  transform: translateY(-50%);
+ /*	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport 
+  transform: translateY(-50%); */
 }
 
 /*Accueil.php */
 
-.
+body {
+	background-color:rgb(20, 20, 20);
+	
+}
+
+html {
+ overflow: hidden;	width: 100%;
+	height: 100%;
+}
+
+.hr1{
+        height: 2px;
+        background-color: #c19e5e;
+        border: none;
+        margin-top: 5px;
+
+      }
+
+
+.hr2{
+        height: 2px;
+        background-color: #c19e5e;
+        border: none;
+        display: block;
+
+        margin-top: 9%;
+
+      }
+
+img {
+	display: flex;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+.ent {
+      	display: flex;
+      	justify-content: space-around;
+      	flex-direction: column;
+      width: 50%;
+      	margin-left: auto;
+    margin-right: auto;
+     	margin-top: 50vh; 
+transform: translateY(-50%);
+    
+}
+
+/* Animation bouton envoyer */
+
+button::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+
+
+}
+button:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+
+
