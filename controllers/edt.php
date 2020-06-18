@@ -24,7 +24,7 @@
 	<div class="space">
 
 		<input name="check[]" id="toggle<?php echo '_'.$j.'_'.$date->format('d') ;?>"  value="<?php echo $date->format('d').'_'.$donnees['id'] ?>" type="checkbox" <?php echo $chk ?>>
-		<label for="toggle<?php echo '_'.$j.'_'.$date->format('d') ;?>"><?php echo $donnees['num_chambre'] ?></label> 
+		<label class="label_edt" for="toggle<?php echo '_'.$j.'_'.$date->format('d') ;?>"><?php echo $donnees['num_chambre'] ?></label> 
 
 	</div>
 	

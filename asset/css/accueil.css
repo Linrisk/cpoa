@@ -1,3 +1,7 @@
+body {
+	max-height: 100vh;
+}
+
 .header {
 	background-color:rgb(20, 20, 20);
 	display: flex;
@@ -5,49 +9,31 @@
 	height: 70px;
 	border-bottom: 0.020rem white solid;
 }
-
-
+.accueil_retour, .deconnecter {
+	font-size: 17px;
+}
+.header_logo {
+	width: auto;
+	height: 90%;
+	float: right;
+}
 
 .bienvenue {
-	 /*border : thick double #c19e5e; */
-	 align-items: center;
-	 width: 15%;
-	 display: flex;
-	 justify-content: center;
-	 height: 30px;
-	 margin-top: 0.5%;
+	display: flex;
+	justify-content: center;
+	height: 30px;
 	color: white;
 	font-size: 20px;
 	text-shadow:0 0 2.5px #c19e5e,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #c19e5e;color:#c19e5e;
-background-color:#262626;
- 
+	background-color:#262626;
     font-family: "FoundryMonolineOT3W08-XBd";
-	    
-	
+    border-top-right-radius: 50rem;
+	border-bottom-right-radius: 50rem;
 }
 
-
-/*----------------*/
-.accueil_retour {
-	width: 70%;
-	height: 60%;
-	margin-top: 0.5%;
-	margin-left: 1%;
-	    font-size: 17px;
-
-
+.interface2 {
+	height: 600px;
 }
-.deconnecter{
-	width: 120px;
-	margin-top: 11%;
-	margin-left: 3%;	
-	    font-size: 17px;
-
-
-}
-img {
-	margin-left: 80%;
-height: 90%;}
 
 .interface {
 	display: flex;
@@ -61,14 +47,14 @@ height: 90%;}
 	margin-left: auto;
 	margin-right: auto;
 	
--webkit-box-shadow: 0px 0px 20px 10px #363636;
--moz-box-shadow: 0px 0px 20px 10px #363636;
-filter:progid:DXImageTransform.Microsoft.Glow(Color=#363636,Strength=30);
-zoom:1;
-box-shadow: 0px 0px 20px 10px #363636;
--moz-border-radius:0px;
--webkit-border-radius:0px;
-border-radius:0px;	
+	-webkit-box-shadow: 0px 0px 20px 10px #363636;
+	-moz-box-shadow: 0px 0px 20px 10px #363636;
+	filter:progid:DXImageTransform.Microsoft.Glow(Color=#363636,Strength=30);
+	zoom:1;
+	box-shadow: 0px 0px 20px 10px #363636;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius:0px;	
 }
 
 .modif {
@@ -105,10 +91,6 @@ margin-left: 30px; */
 
 }
 
-form{
-	margin-top:37%;
-
-}
 
 .edt { 
 	background-color: pink;
@@ -121,10 +103,6 @@ form{
 	flex-direction: column;
 	overflow: scroll;
 	border-radius: 20px;
-	
-
-
-
 }
 
 .compteur {
@@ -182,10 +160,10 @@ input {
 
 }
 
-label {
+.label_edt {
   display: block;
   position: relative;
-  margin: 20px;
+  margin: 10px;
   padding: 15px;
   border: 3px solid #fff;
   border-radius: 100px;
@@ -212,10 +190,10 @@ input:checked + label {
 
 
 
-body {
+/*body {
 	background-color:rgb(20, 20, 20);
 	
-}
+}*/
 button {
 	 background-color: rgb(8, 8, 8,0.1);
    
