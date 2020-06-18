@@ -21,14 +21,14 @@
 			</div>
 		</div>
 
-		<div class="container-fluid pl-0 mt-3">
+		<div class="container-fluid pl-0 my-3">
 			<div class="bienvenue col-6 col-md-5 col-lg-4 ml-0">
 				<?php include '../controllers/bienvenue.php' ?> 
 			</div>
 		</div>
 		
 
-		<div class="container interface2">
+		<div class="container toresize">
 			<div class="row h-100">
 				<div class="col-3">
 					<div class="fiche_renseignement">
@@ -61,6 +61,9 @@
 			</div>
 		</div>
 
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 		<script>
 			function myFunction() {
 			  alert("Modifications éffectuées!");
@@ -73,10 +76,8 @@
 				}
 			}
 		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+		<script src="../asset/js/resize.js"></script>
+		
 		<footer>
 			<hr>
 		</footer>

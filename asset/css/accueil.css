@@ -31,10 +31,6 @@ body {
 	border-bottom-right-radius: 50rem;
 }
 
-.interface2 {
-	height: 600px;
-}
-
 .interface {
 	display: flex;
 	flex-direction: row;

@@ -40,13 +40,6 @@ body {
 
 .interface {
 	background-color: green;
-	height: 600px;
-	width: 90%;
-	margin-top: 1.5%;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-direction: column;
 }
 
 .choix {
@@ -56,26 +49,6 @@ body {
 	margin-top: 1%;
 	align-items: 
 	
-}
-
-.heber {
-	background-color: yellow;
-	height: 120%;
-	margin-left: 30%;
-
-
-}
-
-.vip {
-	background-color: pink;
-		height: 120%;
-margin-right: 30%;
-}
-
-.hebergement {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
 
 .reservation {
@@ -113,14 +86,8 @@ margin-left: auto;
 }
 
 .hotel {
-	display: flex;
-	width: 30%;
 	background-color: #87B5F3;
-	height: 690px;
-	flex-direction: column;
 }
-
-
 
 
 .informations {
@@ -132,26 +99,7 @@ margin-left: auto;
 
 .vip-2 {
 	background-color: pink;
-	width: 600px;
-
-	height: 100%;
 }
-
-.vip-2>* {
-        flex: 1 1 300px;
-    }
-
-
-.labut {
-	display: flex;
-	flex-direction: row;
-
-}
-form {
-	display: flex;
-	flex-direction:column;
-}
-
 
 
 /* Menu */
@@ -201,8 +149,4 @@ form {
 
 .vip-3 {
 	background-color: orange;
-
 }
-.vip-3>* {
-        flex: 1 1 300px;
-    }

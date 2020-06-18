@@ -34,9 +34,9 @@
 		</div>
 
 		<?php for ($l=14; $l<25 ; $l++) { ?>
-			<div id="Interface<?php echo $l; ?>" class="container interface tabcontent">
+			<div id="Interface<?php echo $l; ?>" class="interface tabcontent toresize container">
 				<form class="hebergement h-100">
-					<div class="row h-100">
+					<div class="form-row h-100">
 						<div class="col hotel h-100 overflow-auto">
 							<h1>choix de l'hebergement</h1>
 							<?php include '../controllers/hebergement.php' ?> 
@@ -61,6 +61,8 @@
 			</div>
 		<?php } ?>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			function openCity(evt, tab) {
 			  	// Declare all variables
@@ -84,6 +86,7 @@
 			}
 			document.getElementsByClassName("defaultOpen")[0].click();
 		</script>
+		<script src="../asset/js/resize.js"></script>
 
 	</body>
 </html>
