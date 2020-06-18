@@ -22,7 +22,7 @@
 		</div>
 
 		<div class="container-fluid pl-0 mt-3">
-			<div class="bienvenue col-3 ml-0">
+			<div class="bienvenue col-6 col-md-5 col-lg-4 ml-0">
 				<?php include '../controllers/bienvenue.php' ?> 
 			</div>
 		</div>
