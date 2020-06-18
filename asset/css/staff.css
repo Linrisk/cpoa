@@ -1,51 +1,46 @@
+body {
+	max-height: 100vh;
+}
+
 .header {
-	background-color:red;
+	background-color:rgb(20, 20, 20);
 	display: flex;
 	flex-direction: row;
-	height: 40px;
-	
+	height: 70px;
+	border-bottom: 0.020rem white solid;
 }
-
-/*----------------*/
-.accueil_retour {
-	width: 70%;
-	height: 60%;
-	margin-top: 0.5%;
-	margin-left: 1%;
-	    font-size: 17px;
+.accueil_retour, .deconnecter {
+	font-size: 17px;
+	background-color: rgb(8, 8, 8,0.1);
+    color: white;
+    font-family: "FoundryMonolineOT3W08-XBd";
+    border-style: none;
 }
-
-.deconnecter{
-	width: 120px;
-	margin-top: 11%;
-	margin-left: 3%;	
-	    font-size: 17px;
-
-
+.accueil_retour:hover, .deconnecter:hover {
+	color: #b09056;
 }
-
-
-img {
-	margin-left: 80%;
-height: 90%;}
+.header_logo {
+	width: auto;
+	height: 90%;
+	float: right;
+}
 
 .bienvenue {
-	 /*border : thick double #c19e5e; */
-	 align-items: center;
-	 width: 15%;
-	 display: flex;
-	 justify-content: center;
-	 height: 30px;
-	 margin-top: 0.5%;
-	
-background-color:yellow;
-
-	
+	display: flex;
+	justify-content: center;
+	height: 30px;
+	color: white;
+	font-size: 20px;
+	text-shadow:0 0 2.5px #c19e5e,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #c19e5e;color:#c19e5e;
+	background-color:#262626;
+    font-family: "FoundryMonolineOT3W08-XBd";
+    border-top-right-radius: 50rem;
+	border-bottom-right-radius: 50rem;
 }
 
 .interface {
 	background-color: green;
-	height: 790px;
+	height: 600px;
 	width: 90%;
 	margin-top: 1.5%;
 	margin-left: auto;
@@ -75,17 +70,6 @@ background-color:yellow;
 	background-color: pink;
 		height: 120%;
 margin-right: 30%;
-}
-
-
-.container {
-	display: flex;
-	flex-direction: row;
-	background-color: purple;
-	margin-left:10px;
-	margin-right: 10px;
-	justify-content: center;
-
 }
 
 .hebergement {
@@ -202,9 +186,6 @@ form {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
 }
 
 .tabcontent {
