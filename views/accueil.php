@@ -31,19 +31,24 @@
 			<div class="row h-100 int">
 				<div class="col-4">
 					<div class="row h-100">
-						<div class="col-12 text-center">
-							<label id="logement" class="my-auto mt-3">MON LOGEMENT</label>
+						<div class="col-12 text-center mt-3">
+							<label id="logement" class="my-auto">MON LOGEMENT</label>
 						</div>
 						<div class="col-12">
-							<div class="fiche_renseignement w-75 mx-auto p-2">
+							<div class="fiche_renseignement w-75 p- mx-auto">
 								<?php include '../controllers/renseignement.php' ?> 
 							</div>
 						</div>
-						<a class="col-12" href="popup.php" onclick="openWin(this.href);return false"><button id="modif">Modifier</button></a>
+						<a class="col-12 text-center" href="popup.php" onclick="openWin(this.href);return false">
+							<button id="modif">Modifier</button>
+						</a>
 
-						<div class="nbdisp col-12">
-							<?php include '../controllers/nbdispo.php' ?>
+						<div class="col-12 px-5">
+							<div class="nbdisp row my-2">
+								<?php include '../controllers/nbdispo.php' ?>
+							</div>
 						</div>
+						
 						<div class="col-12">
 						 	<button class="bouton_valid float-right" onclick="document.getElementsByClassName('dispos')[0].submit()">Enregistrer</button>
 						</div>
@@ -79,7 +84,7 @@
 			}
 
 			function openWin(url){
-				newwin=window.open(url,'','width=400,height=200,top=200,left=200');
+				newwin=window.open(url,'','width=600,height=200,top=200,left=200');
 				if(newwin){
 					window.onfocus=function(){newwin.window.close()}
 				}

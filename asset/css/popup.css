@@ -3,31 +3,12 @@ body {
 }
 
 .update {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
 	color: white;font-family: "FoundryMonolineOT3W08-XBd";
-	
-	justify-content: center;
-	margin-top:10%
-}
-
-input{
-	border-radius: 20px;
-
 }
 
 button {
-	
-	margin-left: 25%;
-	margin-top: 5%;
-	height: 5%;
-	width: 50%;
 	border-radius: 20px;
 	border: solid #c8a461;
 	background-color:rgb(20,20,20);
-
-		color: white;font-family: "FoundryMonolineOT3W08-XBd";
-
-
+	color: white;font-family: "FoundryMonolineOT3W08-XBd";
 }

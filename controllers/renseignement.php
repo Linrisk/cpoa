@@ -25,9 +25,10 @@ while ($donnees = $reponse->fetch())
 	$_SESSION["adresse"]=$donnees["Adresse"];
 
 	echo 'Nom : '.$donnees["Nom"]; ?> </br> <?php
-	echo 'Type : '.$donnees["type"]; ?> </br> <?php
-	echo 'Services : '.$donnees["services"]; ?> </br> <?php
-	echo 'Adresse : '.$donnees["Adresse"]; ?> </br> <?php
+	echo '<div class="text-center">Nom : '.$donnees["Nom"].'</div>';
+	echo '<div class="text-center">Type : '.$donnees["type"].'</div>';
+	echo '<div class="text-center">Services : '.$donnees["services"].'</div>';
+	echo '<div class="text-center">Adresse : '.$donnees["Adresse"].'</div>';
 
 
 }

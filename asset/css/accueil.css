@@ -1,5 +1,5 @@
 body {
-	max-height: 100vh;
+	height: 100vh;
 	background-color:rgb(20, 20, 20);
 }
 
@@ -124,9 +124,9 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
--webkit-box-shadow: 0px 0px 23px 12px rgba(99,99,99,0.27);
--moz-box-shadow: 0px 0px 23px 12px rgba(99,99,99,0.27);
-box-shadow: 0px 0px 23px 12px rgba(99,99,99,0.27);
+	-webkit-box-shadow: 0px 0px 23px 12px rgba(99,99,99,0.27);
+	-moz-box-shadow: 0px 0px 23px 12px rgba(99,99,99,0.27);
+	box-shadow: 0px 0px 23px 12px rgba(99,99,99,0.27);
 
 }
 
@@ -170,11 +170,6 @@ input:checked + label {
 }
 
 
-.dispos {
-	margin-top: 1px;
-}
-
-
 button {
 	background-color: rgb(8, 8, 8,0.1);
    
@@ -182,10 +177,10 @@ button {
     font-family: "FoundryMonolineOT3W08-XBd";
     border-style: none;
 }
+
 button:hover {
 	color: #b09056;
 }
-
 
 footer{
 	margin-top: 1%;
@@ -197,7 +192,6 @@ hr {
         border: none;
         margin-top: 5px;
 }
-
 
 .int {	
 	background-color: #1e1e1e;	
@@ -226,15 +220,7 @@ hr {
 .nbdisp {
 	background-color: #c8a461 ;
 	border-radius:5px;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
 	overflow: auto;
-}
-
-.Placesdispos{
-	display: flex;
-	margin-left:3%;
 }
 
 .bouton_valid {

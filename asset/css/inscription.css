@@ -1,52 +1,25 @@
 body {
-	max-height: 100vh;
+	height: 100vh;
 	background-color:rgb(20, 20, 20);
+	color: white;
 }
 
-.forminscri {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	width: 25%;
-	margin-right: auto;
-	margin-left: auto;
-	
-	justify-content: center;
- 		margin-top: 25vh; 
-
-  border : thick double #c19e5e;
-  height:500px;
-  border-radius: 2px;
-  -webkit-box-shadow: 0px 0px 227px 12px rgba(99,99,99,0.27);
--moz-box-shadow: 0px 0px 227px 12px rgba(99,99,99,0.27);
-box-shadow: 0px 0px 227px 12px rgba(99,99,99,0.27);
+.forminscri {	
+	margin-top: 25vh; 
+  	border : thick double #c19e5e;
+  	-webkit-box-shadow: 0px 0px 227px 12px rgba(99,99,99,0.27);
+	-moz-box-shadow: 0px 0px 227px 12px rgba(99,99,99,0.27);
+	box-shadow: 0px 0px 227px 12px rgba(99,99,99,0.27);
+	width: 600px;
 }
 
 h1 {
-	    font-family: "FoundryMonolineOT3W08-XBd";
-	    font-size: 30px;
-	    color: #c8a461;
-}
-
-
-form {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	color: white;
-}
-
-input {
-	border-radius: 10px;
+    font-family: "FoundryMonolineOT3W08-XBd";
+    font-size: 30px;
+    color: #c8a461;
 }
 
 button {
-		border-radius: 20px;
 	border: solid #c8a461;
-		background-color: #1e1e1e; 
-		margin-top: 5%;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	color: white;
+	background-color: #1e1e1e; 
 }
