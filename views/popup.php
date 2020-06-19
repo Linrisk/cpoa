@@ -47,9 +47,18 @@ session_start(); ?>
 
 
 			         <div class="button">
-			        <button type="submit">Modifier</button>
+			        <a onclick="fermer()" ><button type="submit">Enregistrer</button></a>
 			    </div>
 			</form>
+
+
+
+<script type="text/javascript">
+	function fermer(){
+
+		window.newwin.close();
+	}
+</script>
 
 </body>
 </html>

@@ -1,5 +1,7 @@
 body {
 	max-height: 100vh;
+	background-color: rgb(20,20,20);
+	
 }
 
 .header {
@@ -39,7 +41,11 @@ body {
 }
 
 .interface {
-	background-color: green;
+	border: solid #c8a461;
+
+	border-radius: 10px;
+	margin-top: 0.5%;
+	background-color: #1e1e1e; 
 }
 
 .choix {
@@ -87,6 +93,8 @@ margin-left: auto;
 
 .hotel {
 	background-color: #87B5F3;
+	border-radius: 10px;
+	font-size: 15px
 }
 
 
@@ -99,6 +107,10 @@ margin-left: auto;
 
 .vip-2 {
 	background-color: pink;
+	overflow: hidden;
+	font-size: 15px
+		border-radius: 10px;
+
 }
 
 
@@ -108,11 +120,13 @@ margin-left: auto;
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  border-radius: 10px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
+
   float: left;
   border: none;
   outline: none;
@@ -149,4 +163,32 @@ margin-left: auto;
 
 .vip-3 {
 	background-color: orange;
+		border-radius: 10px;
+		font-size: 15px
+
+}
+
+
+h1 {
+	font-family: "FoundryMonolineOT3W08-XBd";
+	font-size: 20px;
+	margin-top: 5%;
+	margin-left: 12%;
+}
+
+.valid {
+	margin-top:auto;
+	margin-bottom: auto;
+	color: white;
+}
+
+#envoyer{
+	border-radius: 20px;
+	border: solid #c8a461;
+		background-color: #1e1e1e; 
+		margin-top: 5%;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	color: white;
 }

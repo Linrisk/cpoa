@@ -1,25 +1,26 @@
-<?php echo 'bienvenue dans votre première connexion ' ;?>
-
 <!Doctype html>
 <html lang="fr">
 
   <meta charset="utf-8">
-    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/inscription.css">
+    <link href="//db.onlinewebfonts.com/c/ed0c21561b7eb2cd38dc212fe2411a65?family=FoundryMonolineOT3W08-XBd" rel="stylesheet" type="text/css"/>
+		<link href="//db.onlinewebfonts.com/c/4ff9162c892f9eef8adecf6e5fcff8ea?family=FoundryMonolineOT3W08-Lt" rel="stylesheet" type="text/css"/>
 <head>
-	<div class="header">
-
-</div>
+	
 </head>
 
 <body>
 	
 	<div class='forminscri'>
+
+		<H1> INSCRIPTION HEBERGEMENT </H1>
 					<form action="../controllers/inscription.php"  method="post">
 					<div class="nomhotel">
 					<label for="name">Nom de l'hotel :</label>
 			        <input type="text" id="nomhotel" name="nomhotel">
 			</div >
 			<div class="type">
+				<label for="name">Type :</label>
 			    <SELECT name="type" size="1">
 						<OPTION>Hôtel
 						<OPTION>Villa Location
@@ -46,7 +47,7 @@
 			</div >
 
 			         <div class="button">
-			        <button type="submit">Envoyer le message</button>
+			        <button type="submit">Valider</button>
 			    </div>
 			</form>
 	</div>

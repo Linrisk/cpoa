@@ -35,27 +35,41 @@
 
 		<?php for ($l=14; $l<25 ; $l++) { ?>
 			<div id="Interface<?php echo $l; ?>" class="interface tabcontent toresize container">
-				<form class="hebergement h-100">
+				<form class="hebergement h-100" name="reserv" method="post" action="../controllers/reservation.php">
 					<div class="form-row h-100">
 						<div class="col hotel h-100 overflow-auto">
-							<h1>choix de l'hebergement</h1>
+							<h1>CHOIX HEBERGEMENT</h1>
 							<?php include '../controllers/hebergement.php' ?> 
 						</div>
-						<div class="col container-2">
-							<button>Valider</button>
-							<div class="informations">
+						<div class="col vip-3 h-100 overflow-auto">
+							<h1>CHOIX VIP EQUIPE</h1>
+			 				<?php include '../controllers/vipnonjury.php' ?> 
+						</div>
 
+						
+						<div class="col vip-2 h-100 overflow-auto">
+							<h1>CHOIX VIP JURY</h1>
+			 				<?php include '../controllers/vip.php' ?> 
+						</div>
+						
+						<div class="col container-2 valid">
+							<label>Durée du séjour : </label>
+							<input type="number"min="1" max="11" name="nb">
+							<button id="envoyer">Valider</button>
+							<?php
+							if(isset($_GET['erreur'])){
+								$aff = "flex";
+							} else {
+								$aff ="none"; 
+							}
+							?>
+							<div class="recup" style="display:<?php echo $aff ?>;">
+								okokokok
 							</div>
 						</div>
 						
-						<div class="col vip-2 h-100 overflow-auto">
-							<h1>choix du jury</h1>
-			 				<?php include '../controllers/vip.php' ?> 
-						</div>
-						<div class="col vip-3 h-100 overflow-auto">
-							<h1>choix du vip</h1>
-			 				<?php include '../controllers/vipnonjury.php' ?> 
-						</div>
+						<input name="date" value="<?php echo $l ?>" style="display: none" >
+
 					</div>
 				</form>
 			</div>
@@ -63,7 +77,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
+		<script>
 			function openCity(evt, tab) {
 			  	// Declare all variables
 			  	var i, tabcontent, tablinks;
@@ -85,8 +99,26 @@
 			  	evt.currentTarget.className += " active";
 			}
 			document.getElementsByClassName("defaultOpen")[0].click();
+
+			$('.alljury').change(function(e) {
+				if($(e.currentTarget).is(":checked")){
+					let select = $(e.currentTarget).data('jury')
+					$('.jury'+select).prop('checked', true)
+				} else {
+					let select = $(e.currentTarget).data('jury')
+					$('.jury'+select).prop('checked', false)
+				}
+			});
+
+			$('input[data-jury][id]').change(function(e){
+				if(!$(e.currentTarget).is(":checked")){
+					$('.alljury[data-jury='+$(e.currentTarget).data('jury')+']').prop('checked', false)
+				}
+			})
 		</script>
 		<script src="../asset/js/resize.js"></script>
-
+		<footer>
+			<hr/>
+		</footer>
 	</body>
 </html>

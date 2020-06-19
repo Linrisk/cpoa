@@ -6,9 +6,10 @@ $j=0;
 
 while ($donnees = $reponse->fetch()){ ?>
 	<div class="form-check">
+		<hr>
 		<div class="form-row">
 			<label class="form-check-label col-7" for="<?php echo 'choix'.$j ?>">
-				<input type="radio" id="<?php echo 'choix'.$j ?>" name="box" value="<?php echo $donnees['Nom']; ?>">
+				<input type="radio" id="<?php echo 'choix'.$j ?>" name="box" value="<?php echo $donnees['id']; ?>">
 				<?php echo $donnees['Nom']; ?>
 			</label>
 			<label class="col-5">
@@ -23,7 +24,9 @@ while ($donnees = $reponse->fetch()){ ?>
 				echo 'nb place : '. $nb_dispo ;
 				?>
 			</label>
+
 		</div>
+		<hr>
 	</div>
 	
 <?php 

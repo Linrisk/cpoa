@@ -24,10 +24,10 @@ while ($donnees = $reponse->fetch())
 	$_SESSION["services"]=$donnees["services"];
 	$_SESSION["adresse"]=$donnees["Adresse"];
 
-	echo $donnees["Nom"]; ?> </br> <?php
-	echo $donnees["type"]; ?> </br> <?php
-	echo $donnees["services"]; ?> </br> <?php
-	echo $donnees["Adresse"]; ?> </br> <?php
+	echo 'Nom : '.$donnees["Nom"]; ?> </br> <?php
+	echo 'Type : '.$donnees["type"]; ?> </br> <?php
+	echo 'Services : '.$donnees["services"]; ?> </br> <?php
+	echo 'Adresse : '.$donnees["Adresse"]; ?> </br> <?php
 
 
 }

@@ -12,7 +12,6 @@
 		<div class="container-fluid header">
 			<div class="col-4">
 				<div class="row h-100">
-					<button class="col accueil_retour">ACCUEIL</button>
 					<a class="col h-100" href="../controllers/deconnexion.php"><button class="deconnecter h-100" action="../controllers/deconnexion.php">FERMER LA SESSION </button></a>
 				</div>
 			</div>
@@ -29,20 +28,28 @@
 		
 
 		<div class="container toresize">
-			<div class="row h-100">
-				<div class="col-3">
-					<div class="fiche_renseignement">
-						<?php include '../controllers/renseignement.php' ?> 
-					</div>
-					<a href="popup.php" onClick="openWin(this.href);return false"><button>Modifier</button></a>
-				</div>
+			<div class="row h-100 int">
 				<div class="col-4">
-					<div class="">
-						<?php include '../controllers/nbdispo.php' ?>
+					<div class="row h-100">
+						<div class="col-12 text-center">
+							<label id="logement" class="my-auto mt-3">MON LOGEMENT</label>
+						</div>
+						<div class="col-12">
+							<div class="fiche_renseignement w-75 mx-auto p-2">
+								<?php include '../controllers/renseignement.php' ?> 
+							</div>
+						</div>
+						<a class="col-12" href="popup.php" onclick="openWin(this.href);return false"><button id="modif">Modifier</button></a>
+
+						<div class="nbdisp col-12">
+							<?php include '../controllers/nbdispo.php' ?>
+						</div>
+						<div class="col-12">
+						 	<button class="bouton_valid float-right" onclick="document.getElementsByClassName('dispos')[0].submit()">Enregistrer</button>
+						</div>
 					</div>
-				 	<button class="bouton_valid float-right bottom-align-text" onclick="document.getElementsByClassName('dispos')[0].submit()">Enregistrer</button>
 				</div>
-				<div class="col-5 h-100 overflow-auto">
+				<div class="col-8 h-100 overflow-auto">
 
 					<?php 
 						$date = new DateTime('2014-05-14');
@@ -50,7 +57,9 @@
 					?>
 					<form class="dispos" action="../controllers/validation_dispo.php" method="post" > 
 						<?php while ($result!="2014-05-24"){ ?> 
+
 							<div class="textes"><?php echo $result; ?></div>
+							<hr>
 							<?php include '../controllers/edt.php'; 
 							$date->modify('+1 day');
 							$result = $date->format('Y-m-d');
@@ -70,7 +79,7 @@
 			}
 
 			function openWin(url){
-				newwin=window.open(url,'','width=400,height=400,top=200,left=200');
+				newwin=window.open(url,'','width=400,height=200,top=200,left=200');
 				if(newwin){
 					window.onfocus=function(){newwin.window.close()}
 				}
@@ -83,4 +92,3 @@
 		</footer>
 	</body>
 </html>
-<!-- ghytezdgezgh -->

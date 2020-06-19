@@ -3,10 +3,39 @@
 form {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	width: 5%;
 }
 
 .enum {
 	display: flex;
 	flex-direction: row;
+
+
+}
+
+body {
+	background-color: rgb(20,20,20);
+	color:white;
+}
+
+.integrale {
+	display: flex;
+	flex-direction: column;
+	margin-left: 35%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.kappa {
+	font-size: 60px;
+	 font-family: "FoundryMonolineOT3W08-XBd";
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+
+}
+.enu-2 {
+	display: flex;
+	margin-right: 10px;
 }
